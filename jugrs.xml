@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="library" version="1.6" method="upgrade">
+	<name>LIB_JUGRS</name>
+	<libraryname>jugrs</libraryname>
+	<description>LIB_JUGRS_XML_DESCRIPTION</description>
+	<creationDate>2011-05-26</creationDate>
+	<author>Emerson Rocha Luiz</author>
+	<authorEmail>emerson@webdesign.eng.br</authorEmail>
+	<authorUrl>http://www.fititnt.org</authorUrl>
+	<copyright>Webdesign Assessoria em Tecnologia da Informação Ltda.</copyright>
+	<license>fititnt(?) licence</license>
+	<version>0.2.0 alpha 1</version>
+	<packagerurl>http://www.joomla.org</packagerurl>
+	<!-- 
+	Soon. Not now.
+	<updateservers>http://update.joomla.org/libraries/alpha</updateservers> -->
+	<files>
+		<file>jugrs.php</file>
+		<file>loader.php</file>
+		<file>jugrs.xml</file>
+		<file>changelog.txt</file>
+		<file>help.txt</file>
+		<folder>3rd</folder><!-- 3rd party files -->
+		<folder>addtoany</folder>
+		<folder>css3</folder>
+		<folder>facebook</folder>
+		<folder>google</folder>
+		<folder>html5</folder>
+		<folder>language</folder><!-- Not a lib! Just copy of language files. Do not need it include -->
+		<folder>twitter</folder>
+	</files>
+ 		<languages folder="language">
+			<language tag="en-GB">en-GB/en-GB.lib_jugrs.ini</language>
+			<language tag="en-GB">en-GB/en-GB.lib_jugrs.sys.ini</language>
+			<language tag="pt-BR">pt-BR/pt-BR.lib_jugrs.ini</language>
+			<language tag="pt-BR">pt-BR/pt-BR.lib_jugrs.sys.ini</language>
+		</languages>
+</extension>

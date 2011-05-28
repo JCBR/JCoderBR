@@ -1,0 +1,91 @@
+JUGRS Library
+Developer email: emerson@webdesign.eng.br
+Developer page: http://www.fititnt.org
+Joomla User Group Rio Grande do Sul page: http://www.joomlatche.com.br
+
+----------------------------------------------------------------------------------------
+1. How to install
+	1.1 Joomla 1.5
+	1.2 Joomla 1.6
+		1.2.1 Extension Manager: Install
+		1.2.2 Extension Manager: Discover
+2. How it works?
+3. Some Examples
+	3.1 Facebook
+		3.1.1 Like Button
+		3.1.2 Comment Button
+	3.2 HTML5
+		3.2.1 Layer compability of HTML5 for old browsers
+
+
+========================================================================================
+1. HOW TO INSTALL?
+	1.1 JOOMLA 1.5
+	
+This library is aimed to use on Joomla 1.6+. It provably can run also on Joomla 1.5 
+but not with the installer. Try copy to livraries folders and see if works.
+
+	1.2 JOOMLA 1.6+
+		
+		1.2.1  EXTENSION MANAGER: INSTALL
+		
+Just install the package like any other extension. You can also Just zip all file contents
+from that are folder /libraries/jugrs inside of another Joomla site.
+		
+		1.2.2  EXTENSION MANAGER: DISCOVER
+		
+Copy contents of this folder for folder /libraries/jugrs and click discover, and install it
+		
+2.0 HOW IT WORKS?
+
+If you are familiarized with Joomla way of call functions, the logic of this library will be
+simple for you. Fist, import the library:
+
+	jimport('jugrs.jugrs');
+
+They, call some instance name. Normaly the same name of one folder.
+
+	$facebook = JUGRS::getFacebook();
+
+Then, call some function inside this instance. All they are on 
+/libraries/jugrs/"name"/"name".php. Some of these funcions will return one value that must 
+be printed, and others just return TRUE if it runs, and will do something for you on your
+site. One another example:
+
+	echo $facebook->comment();
+	
+	
+3 EXAMPLES
+	3.1 FACEBOOK
+		3.1.1 LIKE BUTTON
+	
+		jimport('jugrs.jugrs');
+		$facebook = JUGRS::getFacebook();
+		echo $facebook->like();
+		
+		3.1.2 COMMENT
+		
+		jimport('jugrs.jugrs');
+		$facebook = JUGRS::getFacebook()
+		//( Show too on fist page of site | comments from http://www.fititnt.org | 10 coments
+		//| with of 600px )
+		echo $facebook->comment(TRUE, 'http://www.fititnt.org', 10, 600);
+		
+	3.2 HTML5
+	
+		3.2.1 LAYER COMPABILITY OF HTML5 FOR OLD BROWSERS
+	
+		jimport('jugrs.jugrs');
+		$html5 = &JUGRS::getHtml5();
+		$html5->compatibility(); //Load one Javascript library , and just return TRUE
+
+		
+
+
+
+
+
+
+
+
+
